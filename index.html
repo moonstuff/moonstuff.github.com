@@ -7,3 +7,10 @@ layout: default
 {{ post.content }}
 <em>Posted on {{ post.date | date_to_long_string }}.</em>
 {% endfor %}
+
+<h2>archive</h2>
+<ul id="archive">
+{% for post in site.posts %}
+<li><a href="{{ post.url }}">{{ post.title }}</a> <abbr>{{ post.date | date_to_string }}</abbr></li>
+{% endfor %}
+</ul>
