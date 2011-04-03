@@ -78,7 +78,6 @@ h1,h2,h3 {
 	float: left;
 	margin-top: 22px;
 	text-align: center;
-	width: 220px;
 }
 .title h1 {
 	color: #999;
@@ -95,7 +94,7 @@ h1,h2,h3 {
 	height: 100px;
 	padding: 0 16px;
 }
-.navigation a {
+/*.navigation a {
 	border-left: 1px solid #111;	
 	color: #888;
 	float: right;
@@ -109,7 +108,7 @@ h1,h2,h3 {
 	background: #000 url(img/navhover.gif) repeat-x;
 	color: #999;
 	padding: 56px 18px 10px;
-}
+}*/
 
 /* holders */
 .holder {

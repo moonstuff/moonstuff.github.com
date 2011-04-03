@@ -7,7 +7,9 @@
 <meta name="description" content="description"/>
 <meta name="keywords" content="keywords"/> 
 <meta name="author" content="author"/> 
-<link rel="stylesheet" type="text/css" href="default.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="/default.css" media="screen"/>
+<link rel="alternate" type="application/atom+xml"
+href="/atom.xml">
 <title>{{ page.title }}</title>
 </head>
 
@@ -18,8 +20,7 @@
 	<div class="navigation">
 
 		<div class="title">
-			<h1>moon stuff</h1>
-			<h2>... on the moon ...</h2>
+      <h1><a href="/">... moon stuff ...</a></h1>
 		</div>
 
 		<div class="clearer"><span></span></div>
@@ -32,7 +33,7 @@
     {{ content }}
 	</div>
 
-  <div class="footer">Template design by <a href="http://templates.arcsin.se">Arcsin</a> | Moon by <a href="http://www.flickr.com/photos/penguinbush/2768719983/">penguinbush</a>
+  <div class="footer"><a href="/atom.xml">rss</a> | template by <a href="http://templates.arcsin.se">Arcsin</a> | moon by <a href="http://www.flickr.com/photos/penguinbush/2768719983/">penguinbush</a>
 	</div>
 
 </div>
