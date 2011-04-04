@@ -25,7 +25,7 @@ body {
 	margin: 0;
 }
 
-p,code,ul {
+p,code,ul,ol {
 	font-size: 1.2em;
 	padding-bottom: 1.2em;
 }
@@ -35,8 +35,11 @@ h1 {
 	margin-bottom: 4px;
 }
 
-li {
+ul li {
 	list-style: url(img/li.gif);
+}
+
+li {
 	margin-left: 18px;
 }
 
