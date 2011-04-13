@@ -1,0 +1,15 @@
+---
+layout: default
+title: om nom nom nom nom 
+---
+
+I've had fun a lot of fun in the past few evenings writing the first version of the aggregator, which I have decided to call *nom*. This is *nom1*, which features:
+
+* A simple one-file single-threaded ugly C program.
+* Reading event data on standard input.
+* Aggregating immediately.
+* Storing the aggregated data in [KyotoCabinet](http://fallabs.com/kyotocabinet/)
+
+KyotoCabinet is a very nice library to play with. Getting up and running has been incredibly easy. The API is so nice to the programmer. No ugly "if key doesn't exist then update otherwise insert" semantics. The DB open method ("just give us a string and we'll do everything) is just plain nice.
+
+Anyway, I just plugged it all in and didn't tune it at all. *nom1* chugs along happily until about 2 million records in, which is what you'd expect because the KyotoCabinet defaults are suitable for 1 million keys. With basic tuning I can aggregate 40 million events in about 2 minutes 30 seconds. In time I'll learn more and find more appropriate settings, but so far it has been a really fun experience.
