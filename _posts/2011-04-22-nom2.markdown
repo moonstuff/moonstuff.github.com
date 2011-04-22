@@ -1,0 +1,17 @@
+---
+layout: default
+title: nom2
+---
+
+Beware nom2, the lua-based aggregator!
+
+    $ time zcat ../events-2006-03-01.gz | ./nom2 reports.txt
+     EOF reached: 20328219 records
+     454226 searches, 19635314 appearances, 238679 clicks, 1173820 urls
+     generating url reports for 1173820 urls
+
+     real	2m23.013s
+     user	2m49.240s
+     sys	0m3.050s
+
+The completely unoptimised, absolutely first time around implementation runs at 2 minutes 23 with LuaJIT 2.0.0-beta6. That's only 130% of the runtime of the C version! 
